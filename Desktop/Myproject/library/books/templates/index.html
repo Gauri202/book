@@ -1,0 +1,25 @@
+<h1>LibraryBooks</h1>
+
+<table border="1" width="800">  
+<tr>
+    <th style="background-color: yellowgreen">Book_ID</th> 
+    <th style="background-color: yellowgreen">Book_Code</th> 
+    <th style="background-color: yellowgreen">Book_Title</th> 
+    <th style="background-color: yellowgreen">Author</th> 
+    <th style="background-color: yellowgreen">Delete_book</th> 
+    
+</tr>     
+{% for x in mybook %}
+<tr>
+<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+<td>{{ x.bookcode }}</td>
+<td>{{ x.booktitle }}</td>
+<td>{{ x.author }}</td>
+<td><a href="delete/{{ x.id }}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+<a href="add/">Add book</a>
+</p>

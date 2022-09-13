@@ -1,0 +1,17 @@
+<h1>Add book</h1>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}
+
+Book Code:<br>
+<input name="second">
+<br><br>
+Book Title:<br>
+<input name="first">
+<br><br>
+Author:<br>
+<input name="last">
+<br><br>
+
+<input type="submit" value="Submit">
+</form>
